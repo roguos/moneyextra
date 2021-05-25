@@ -1,134 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>MoneyExtra - Home</title>
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-  </head>
-  <body class="home">
-    <div>
-      <div id="area-cabecalho">
-        <div id="area-logo">
-          <h1>Money<span class="branco">Extra</span></h1>
-        </div>
-        <div id="area-menu">
-          <ul id="navegacao">
-            <a id="home" href="index.html">Home</a>
-            <a id="anuncios" href="anuncios.html">Anuncios</a>
-            <a id="chat" href="chat.html">Chat</a>
-            <a id="maisvistos" href="maisvistos.html">Mais vistos</a>
-            <a id="cadastrolink" href="cadastro.html">Cadastro</a>
-          </ul>
-        </div>
-      </div>
+    <meta charset="utf-8"/>
+    <title>Money - Extra</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 
-      <div id="container" id="conteudo">
-        <div id="primario">
-          <div class="caixa">
-            <h2>Destaque</h2>
-            <div class="caixa-conteudo">
-              <h3>Conteudo</h3>
-              <img src="imagens/taxi.jpg" width="100%" />
-              <p>
-                (aqui pode ser os anuncios recentes e nao recentes essas imagens acima e so para
-                ilustrar)
-              </p>
-              <a href="" class="">Clique aqui</a>
-            </div>
-          </div>
-        </div>
-        <div id="secundario">
-          <div class="caixa">
-            <h2>Conteudo</h2>
-            <div class="caixa-conteudo">
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-              conteudo<br />
-            </div>
-          </div>
-        </div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <style type="text/css">@font-face{font-family:'Pattaya';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pattaya/v6/ea8ZadcqV_zkHY-XBdOt9kRHiVqtCg.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Pattaya';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pattaya/v6/ea8ZadcqV_zkHY-XBcOt9kRHiVqtCg.woff2) format('woff2');unicode-range:U+0E01-0E5B, U+200C-200D, U+25CC;}@font-face{font-family:'Pattaya';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pattaya/v6/ea8ZadcqV_zkHY-XBdit9kRHiVqtCg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Pattaya';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pattaya/v6/ea8ZadcqV_zkHY-XBdmt9kRHiVqtCg.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Pattaya';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/pattaya/v6/ea8ZadcqV_zkHY-XBdet9kRHiVo.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+    <style type="text/css">@font-face{font-family:'KoHo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/koho/v6/K2F-fZ5fmddNNjoUfbTRKoqYBg.woff2) format('woff2');unicode-range:U+0E01-0E5B, U+200C-200D, U+25CC;}@font-face{font-family:'KoHo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/koho/v6/K2F-fZ5fmddNNiEUfbTRKoqYBg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'KoHo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/koho/v6/K2F-fZ5fmddNNiAUfbTRKoqYBg.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'KoHo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/koho/v6/K2F-fZ5fmddNNi4UfbTRKoo.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+    <!-- ************ -->
 
-        <!-- inicio lateral-->
-        <div id="lateral">
-          <div class="caixa">
-            <h2>Conteudo</h2>
-            <div class="caixa-conteudo">
-              <ul>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-                <li>
-                  <a href=""> conteudo</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="caixa">
-            <h2>conteudo</h2>
-            <div class="caixa-conteudo">
-              <form>
-                <div>
-                  <label for="email"> E-mail:</label>
-                  <input type="text" name="email" id="email" placeholder="E-mail" />
-                </div>
-                <div>
-                  <input class="submit" type="submit" value="cadastrar" />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="container-rodape" style="clear: both">
-      <div id="rodape">&copy; Copyright 2020-2021 MoneyExtra</div>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <!-- ************ -->
+  <link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+  <body>
+    <app-root></app-root>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="runtime.7b63b9fd40098a2e8207.js" defer=""></script><script src="polyfills.94daefd414b8355106ab.js" defer=""></script><script src="main.942ec06f379e84e5b77a.js" defer=""></script></body>
 </html>
